@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -12,63 +12,87 @@
 
 <body>
     <h1>Mijn Portfolio</h1>
+
     <div>
-        <a href="index.html"><img src="Afbeeldingen/home.jpg" alt="klein houten huisje op gras" width="100px"></a>
-        <a href="cv.html"><img src="Afbeeldingen/cv_2.jpg" alt="Blauw hologram met honingraat structuur" width="100px"></a>
-        <a href="ervaring.html"><img src="Afbeeldingen/it_2.jpg" alt="Close-up van een chip" width="100px"></a>
-        <a href="hobby.html"><img src="Afbeeldingen/forest_1.jpg" alt="Wandelpad in het bos" width="100px"></a>
-        <a href="contact.html"><img src="Afbeeldingen/contact_1.jpg" alt="Contact iconen met wijzende vinger op de achtergrond" width="100px"></a>
+        <!--Via CSS maak ik het nog zo dat de naam van de pagina in de afbeelding staat -->        
+        <div>        
+            <a href="index.html"><img src="Afbeeldingen/home.jpg" alt="klein houten huisje op gras" title="Home" width="100"></a>
+        </div>
+
+        <div>
+            <a href="cv.html"><img src="Afbeeldingen/cv_2.jpg" alt="Blauw hologram met honingraat structuur" title="CV"
+                    width="100"></a>
+        </div>
+
+        <div>
+            <a href="ervaring.html"><img src="Afbeeldingen/it_2.jpg" alt="Close-up van een chip" title="Ervaring" width="100"></a>
+        </div>
+
+        <div>
+            <a href="hobby.html"><img src="Afbeeldingen/forest_1.jpg" alt="Wandelpad in het bos" title="Hobby's en interesses" width="100"></a>
+        </div>
+
+        <div>
+            <a href="contact.html"><img src="Afbeeldingen/contact_1.jpg"
+                    alt="Contact iconen met wijzend vinger op de achtergrond" width="100"></a>
+        </div>
     </div>
+
     <h2>Contact</h2>
 
     <p>Aarzel niet om contact op te nemen via onderstaande gegevens of via het formulier.</p>
+
     <ul style="list-style: none;">
         <li>Felix Bastijns</li>
         <li><a href="mailto:felix.bastijns@gmail.com">Felix.Bastijns@gmail.com</a></li>
         <li><a href="tel:0032476302173">0476 30 21 73</a></li>
     </ul>
 
-    <form action="https://tm-statweb.be/forms.php " method="post">
+    <form action="https://tm-statweb.be/sendmail.php" method="post" title="Laat hier een reactie achter">
+        <label>Laat hier een reactie achter:</label>
+        <input type="email" name="studentemail" id="studentemail" value="r0295639@student.thomasmore.be" hidden>
         <div>
             <label for="naam">
                 Naam:
-                <input type="text" name="naam" id="naam" />
+                <input type="text" name="naam" id="naam" required>
             </label>
         </div>
 
         <div>
             <label for="email">
-                Email:
-                <input type="email" name="email" id="email" />
+                E-mailadres:
+                <input type="email" name="email" id="email" required>
             </label>
         </div>
 
         <div>
             <label for="telefoon">
                 Telefoonnummer:
-                <input type="tel" name="telefoon" id="telefoon" />
+                <input type="tel" name="telefoon" id="telefoon">
             </label>
         </div>
 
         <div>
             <label for="onderwerp">
                 Onderwerp:
-                <input type="text" name="onderwerp" id="onderwerp" />
+                <input type="text" name="onderwerp" id="onderwerp">
             </label>
         </div>
 
         <div>
             <label for="reactie">
                 Reactie:
-                <textarea name="reactie" id="reactie"></textarea>
+                <textarea name="reactie" id="reactie" required></textarea>
             </label>
         </div>
         <div>
             <input type="submit" value="Versturen">
         </div>
     </form>
-    <img src="/Afbeeldingen/contact_2.jpg" alt="Scrabble letters die'Contact us spellen'" width="300px">
-    <img src="/Afbeeldingen/email.jpg" alt="Hand met vele brieven boven" width="500px">
+
+    <img src="/Afbeeldingen/contact_2.jpg" alt="Scrabble letters die'Contact us spellen'" width="300">
+    <img src="/Afbeeldingen/email.jpg" alt="Hand met vele brieven boven" width="500">
+    
 </body>
 
 </html>
