@@ -7,47 +7,81 @@
     <meta name="author" content="Felix Bastijns" />
     <title>Index</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Mijn Portfolio</h1>
-
-    <p>
-      Welkom op mijn portfolio. Ik ben Felix Bastijns en op deze website vindt u
-      allerhande informatie over mij die u hopelijk kan overtuigen om te kiezen
-      voor mij als nieuwe werknemer voor uw bedrijf.
-    </p>
-
-    <!--Via CSS maak ik het nog zo dat de naam van de pagina in de afbeelding staat -->
-    <!--De titel 'Mijn portfolio' en de navigatiemenu aan de zijkant zullen vast blijven staan op de pagina terwijl je door de inhoud scrollt. -->
-    <a href="cv.html"
-      ><img
-        src="img/cv_2.jpg"
-        alt="Blauw hologram met honingraat structuur"
-        title="CV"
-        width="378"
-    /></a>
-    <a href="ervaring.html"
-      ><img
-        src="img/it_2.jpg"
-        alt="Close-up van een chip"
-        width="400"
-        title="Ervaring"
-    /></a>
-    <a href="hobby.html"
-      ><img
-        src="img/forest_1.jpg"
-        alt="Wandelpad in het bos"
-        width="400"
-        title="Hobby's en interesses"
-    /></a>
-    <a href="contact.html"
-      ><img
-        src="img/contact_1.jpg"
-        alt="Contact iconen met wijzend vinger op de achtergrond"
-        width="378"
-        title="Contact"
-    /></a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <body class="bg-light2">
+    <img
+      src="img/full_banner.jpg"
+      alt=""
+      class="background-image img-fluid top-0 start-0 position-fixed"
+    />
+    <main>
+      <h1 class="text-center title index-font bg-lightblue fs-1 py-3">Mijn Portfolio</h1>
+      <div class="container">
+      
+        <div class="row justify-content-md-center">
+          <div class="col-lg-4 px-5 pt-2">
+            <p class="text-center fs-3">CV</p>
+            <a href="cv.html"
+              ><img
+                src="img/cv_1.jpg"
+                alt="Blauw hologram met honingraat structuur"
+                title="CV"
+                class="img-fluid rounded background-image"
+            /></a>
+            
+          </div>
+          <div class="col-lg-4 px-5 pt-2">
+            <p class="text-center fs-3">Ervaring</p>
+            <a href="ervaring.html"
+              ><img
+                src="img/it_2.jpg"
+                alt="Close-up van een chip"
+                class="img-fluid rounded"
+                title="Ervaring"
+            /></a>
+            
+          </div>
+        </div>
+        <div class="row justify-content-md-center pt-3">
+          <div class="col-lg-4 px-5 pb-2">
+            <p class="text-center fs-3 text-dark">Hobby's</p>
+            <a href="hobby.html"
+              ><img
+                src="img/forest_1_index.jpg"
+                alt="Wandelpad in het bos"
+                class="img-fluid rounded"
+                title="Hobby's en interesses"
+            /></a>
+           
+          </div>
+          <div class="col-lg-4 px-5 pb-2">
+            <p class="text-center fs-3 text-dark">Contact</p>
+            <a href="contact.html"
+              ><img
+                src="img/contact_1.jpg"
+                alt="Contact iconen met wijzend vinger op de achtergrond"
+                class="img-fluid rounded"
+                title="Contact"
+            /></a>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

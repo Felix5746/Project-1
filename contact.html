@@ -15,111 +15,153 @@
       crossorigin="anonymous"
     />
   </head>
-  <img class="img-fluid" src="img/Banner.jpg" alt="">
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">MijnPortfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+  <body  class="bg-light">
+    <img class="img-fluid" src="img/Banner.jpg" alt="" />
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MijnPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ervaring.html">Ervaring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobby.html">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2 class="text-center bg-lightblue py-5 mb-0 title">Contact</h2>
+
+    <main class="bg-light">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <p>
+          Aarzel niet om contact op te nemen via onderstaande gegevens of via
+          het formulier.
+        </p>
+
+        <ul style="list-style: none">
+          <li>Felix Bastijns</li>
+          <li>
+            <a href="mailto:felix.bastijns@gmail.com"
+              >Felix.Bastijns@gmail.com</a
+            >
+          </li>
+          <li><a href="tel:0032476302173">0476 30 21 73</a></li>
+        </ul>
+
+        <form
+          action="https://tm-statweb.be/sendmail.php"
+          method="post"
+          title="Laat hier een reactie achter"
+        >
+          <label>Laat hier een reactie achter:</label>
+          <input
+            type="email"
+            name="studentemail"
+            id="studentemail"
+            value="r0295639@student.thomasmore.be"
+            hidden
+          />
+          <div>
+            <label for="naam">
+              Naam:
+              <input type="text" name="naam" id="naam" required />
+            </label>
+          </div>
+
+          <div>
+            <label for="email">
+              E-mailadres:
+              <input type="email" name="email" id="email" required />
+            </label>
+          </div>
+
+          <div>
+            <label for="telefoon">
+              Telefoonnummer:
+              <input type="tel" name="telefoon" id="telefoon" />
+            </label>
+          </div>
+
+          <div>
+            <label for="onderwerp">
+              Onderwerp:
+              <input type="text" name="onderwerp" id="onderwerp" />
+            </label>
+          </div>
+
+          <div>
+            <label for="reactie">
+              Reactie:
+              <textarea name="reactie" id="reactie" required></textarea>
+            </label>
+          </div>
+          <div>
+            <input type="submit" value="Versturen" />
+          </div>
+        </form>
+
+        <img
+          src="img/contact_2.jpg"
+          alt="Scrabble letters die'Contact us spellen'"
+          title="Contact"
+          width="400"
+        />
+        <img
+          src="img/email.jpg"
+          alt="Hand met vele brieven boven"
+          title="E-mail"
+          width="600"
+        />
+      </div>
+    </main>
+    <div class="container bg-light">
+      <footer class="bg-light">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">CV</a>
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ervaring.html">Ervaring</a>
+            <a href="cv.html" class="nav-link px-2 text-muted">CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hobby.html">Hobby</a>
+            <a href="ervaring.html" class="nav-link px-2 text-muted"
+              >Ervaring</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            <a href="hobby.html" class="nav-link px-2 text-muted">Hobby</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-2 text-muted">Contact</a>
           </li>
         </ul>
-       
-      </div>
+      </footer>
     </div>
-  </nav>
-
-  <h2>Contact</h2>
-
-  <p>
-    Aarzel niet om contact op te nemen via onderstaande gegevens of via het
-    formulier.
-  </p>
-
-  <ul style="list-style: none">
-    <li>Felix Bastijns</li>
-    <li>
-      <a href="mailto:felix.bastijns@gmail.com">Felix.Bastijns@gmail.com</a>
-    </li>
-    <li><a href="tel:0032476302173">0476 30 21 73</a></li>
-  </ul>
-
-  <form
-    action="https://tm-statweb.be/sendmail.php"
-    method="post"
-    title="Laat hier een reactie achter"
-  >
-    <label>Laat hier een reactie achter:</label>
-    <input
-      type="email"
-      name="studentemail"
-      id="studentemail"
-      value="r0295639@student.thomasmore.be"
-      hidden
-    />
-    <div>
-      <label for="naam">
-        Naam:
-        <input type="text" name="naam" id="naam" required />
-      </label>
-    </div>
-
-    <div>
-      <label for="email">
-        E-mailadres:
-        <input type="email" name="email" id="email" required />
-      </label>
-    </div>
-
-    <div>
-      <label for="telefoon">
-        Telefoonnummer:
-        <input type="tel" name="telefoon" id="telefoon" />
-      </label>
-    </div>
-
-    <div>
-      <label for="onderwerp">
-        Onderwerp:
-        <input type="text" name="onderwerp" id="onderwerp" />
-      </label>
-    </div>
-
-    <div>
-      <label for="reactie">
-        Reactie:
-        <textarea name="reactie" id="reactie" required></textarea>
-      </label>
-    </div>
-    <div>
-      <input type="submit" value="Versturen" />
-    </div>
-  </form>
-
-  <img
-    src="img/contact_2.jpg"
-    alt="Scrabble letters die'Contact us spellen'"
-    title="Contact"
-    width="400"
-  />
-  <img
-    src="img/email.jpg"
-    alt="Hand met vele brieven boven"
-    title="E-mail"
-    width="600"
-  />
   </body>
 </html>

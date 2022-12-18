@@ -21,3 +21,23 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
+.index-font{
+    font-family: "Noto serif", Helvetica, sans-serif;    
+    
+}
+
+.font-small{
+    font-size: 5pt;
+}
+
+.font-large{
+    font-size: 60pt;
+}
+
+.background-image{
+    z-index: -1;
+}
+
+.foreground{
+    z-index:2000;
+}
