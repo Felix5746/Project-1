@@ -7,104 +7,132 @@
     <meta name="author" content="Felix Bastijns" />
     <title>Ervaring</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="default.css" />
   </head>
 
-  <body>
-    <h1>Mijn Portfolio</h1>
-
-    <div>
-      <!--Via CSS maak ik het nog zo dat de naam van de pagina in de afbeelding staat -->
-      <!--De titel 'Mijn portfolio' en de navigatiemenu aan de zijkant zullen vast blijven staan op de pagina terwijl je door de inhoud scrollt. -->
-      <div>
-        <a href="index.html"
-          ><img
-            src="img/home.jpg"
-            alt="klein houten huisje op gras"
-            title="Home"
-            width="100"
-        /></a>
+  <body class="bg-light">
+    <img class="img-fluid" src="img/Banner.jpg" alt="" />
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MijnPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="ervaring.html"
+                >Ervaring</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobby.html">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <div>
-        <a href="cv.html"
-          ><img
-            src="img/cv_2.jpg"
-            alt="Blauw hologram met honingraat structuur"
-            title="CV"
-            width="100"
-        /></a>
-      </div>
+    <main class="bg-light">
+      <h2 class="text-center bg-lightblue py-5 mb-0 title">Ervaring</h2>
+      <div class="container">
+        <div class="row bg-light2">
+          <div class="col-lg-6 py-5">
+            <img
+              src="img/code.jpg"
+              alt="Stuk code met servers op de achtergrond"
+              title="Code"
+              class="img-fluid rounded"
+            />
 
-      <div>
-        <a href="ervaring.html"
-          ><img
-            src="img/it_2.jpg"
-            alt="Close-up van een chip"
-            title="Ervaring"
-            width="100"
-        /></a>
-      </div>
+            <h3 class="pb-3 pt-5">Opleiding</h3>
+            <p>
+              Mijn eerste kennismaking met programmeren was tijdens mijn
+              opleiding informatica beheer in het secundair onderwijs. Hier
+              leerden we al enkele programmeertalen. De backend talen hebben mij
+              altijd het beste gelegen. In het laatste jaar werd er gevraagd om
+              als eindwerk een project voor een bedrijf uit te werken. Ik had
+              een project waarbij ik een programma moest schrijven dat gegevens
+              (via een formulier of rechtstreeks via EID) inlas en een
+              persoonlijke pas afprintte voor medewerkers van een filmfestival.
+              Omdat mijn programma een elektrische identiteitskaart moest kunnen
+              inlezen, heb ik mezelf C# aangeleerd. Voor de koppeling van het
+              online formulier aan een databank heb ik mezelf ook een basis PHP
+              aangeleerd. Dit was een zeer leerrijke ervaring.
+            </p>
+          </div>
+          <div class="col-lg-6 py-5 bg-light1">
+            <img
+              src="img/theater.jpg"
+              alt="Groene theater setting"
+              title="Theater"
+              class="img-fluid rounded"
+            />
 
-      <div>
-        <a href="hobby.html"
-          ><img
-            src="img/forest_1.jpg"
-            alt="Wandelpad in het bos"
-            title="Hobby's en interesses"
-            width="100"
-        /></a>
+            <h3 class="pb-3 pt-5">Werkervaring</h3>
+            <p>
+              Na mijn opleiding in het secundair heb ik lang gewerkt als
+              theatertechnieker. Eerst deed ik dit als freelancer, waardoor ik
+              op verscheidene plaatsen gewerkt heb. Zo leerde ik goed netwerken
+              en leerde ik veel andere communicatieve vaardigheden die nodig
+              zijn om met verschillende persoonlijkheden samen te werken. Daarna
+              heb ik vast in een theaterzaal gewerkt, waar mijn favoriete
+              bezigheid het programmeren van licht en geluidstafels was.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <a href="contact.html"
-          ><img
-            src="img/contact_1.jpg"
-            alt="Contact iconen met wijzend vinger op de achtergrond"
-            width="100"
-            title="Contact"
-        /></a>
-      </div>
+    </main>
+    <div class="container bg-light">
+      <footer class="bg-light">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="cv.html" class="nav-link px-2 text-muted">CV</a>
+          </li>
+          <li class="nav-item">
+            <a href="ervaring.html" class="nav-link px-2 text-muted"
+              >Ervaring</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="hobby.html" class="nav-link px-2 text-muted">Hobby</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-2 text-muted">Contact</a>
+          </li>
+        </ul>
+      </footer>
     </div>
-
-    <h2>Ervaring</h2>
-
-    <img
-      src="img/code.jpg"
-      alt="Stuk code met servers op de achtergrond"
-      title="Code"
-      width="500"
-    />
-    <img
-      src="img/theater.jpg"
-      alt="Groene theater setting"
-      title="Theater"
-      width="593"
-    />
-
-    <h3>Opleiding</h3>
-    <p>
-      Mijn eerste kennismaking met programmeren was tijdens mijn opleiding
-      informatica beheer in het secundair onderwijs. Hier leerden we al enkele
-      programmeertalen. De backend talen hebben mij altijd het beste gelegen. In
-      het laatste jaar werd er gevraagd om als eindwerk een project voor een
-      bedrijf uit te werken. Ik had een project waarbij ik een programma moest
-      schrijven dat gegevens (via een formulier of rechtstreeks via EID) inlas
-      en een persoonlijke pas afprintte voor medewerkers van een filmfestival.
-      Omdat mijn programma een elektrische identiteitskaart moest kunnen
-      inlezen, heb ik mezelf C# aangeleerd. Voor de koppeling van het online
-      formulier aan een databank heb ik mezelf ook een basis PHP aangeleerd. Dit
-      was een zeer leerrijke ervaring.
-    </p>
-
-    <h3>Werkervaring</h3>
-    <p>
-      Na mijn opleiding in het secundair heb ik lang gewerkt als
-      theatertechnieker. Eerst deed ik dit als freelancer, waardoor ik op
-      verscheidene plaatsen gewerkt heb. Zo leerde ik goed netwerken en leerde
-      ik veel andere communicatieve vaardigheden die nodig zijn om met
-      verschillende persoonlijkheden samen te werken. Daarna heb ik vast in een
-      theaterzaal gewerkt, waar mijn favoriete bezigheid het programmeren van
-      licht en geluidstafels was.
-    </p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
