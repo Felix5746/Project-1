@@ -16,7 +16,7 @@
     />
   </head>
 
-  <body  class="bg-light">
+  <body class="bg-light">
     <img class="img-fluid" src="img/Banner.jpg" alt="" />
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -57,87 +57,93 @@
 
     <main class="bg-light">
       <div class="container">
-        <h2>Contact</h2>
+        <div class="row bg-light2">
+          <div class="col-lg-6 my-5 pe-5">
+            
+            <div class="list-group list-group mb-4">
+              <div class="py-3 list-group-item list-group-item-secondary fs-5 color-green" aria-current="true">
+                Felix Bastijns
+              </div>
+              
+                <a class="list-group-item list-group-item-action list-group-item-white py-3 fs-5 color-green" href="mailto:felix.bastijns@gmail.com"
+                  >Felix.Bastijns@gmail.com</a
+                >            
+             
+                <a class="list-group-item list-group-item-action list-group-item-white py-3 fs-5 color-green" href="tel:0032476302173">0476 30 21 73</a>
+              
+            </div>
 
-        <p>
-          Aarzel niet om contact op te nemen via onderstaande gegevens of via
-          het formulier.
-        </p>
-
-        <ul style="list-style: none">
-          <li>Felix Bastijns</li>
-          <li>
-            <a href="mailto:felix.bastijns@gmail.com"
-              >Felix.Bastijns@gmail.com</a
-            >
-          </li>
-          <li><a href="tel:0032476302173">0476 30 21 73</a></li>
-        </ul>
-
-        <form
-          action="https://tm-statweb.be/sendmail.php"
-          method="post"
-          title="Laat hier een reactie achter"
-        >
-          <label>Laat hier een reactie achter:</label>
-          <input
-            type="email"
-            name="studentemail"
-            id="studentemail"
-            value="r0295639@student.thomasmore.be"
-            hidden
-          />
-          <div>
-            <label for="naam">
-              Naam:
-              <input type="text" name="naam" id="naam" required />
-            </label>
-          </div>
-
-          <div>
-            <label for="email">
-              E-mailadres:
-              <input type="email" name="email" id="email" required />
-            </label>
-          </div>
-
-          <div>
-            <label for="telefoon">
-              Telefoonnummer:
-              <input type="tel" name="telefoon" id="telefoon" />
-            </label>
-          </div>
-
-          <div>
-            <label for="onderwerp">
-              Onderwerp:
-              <input type="text" name="onderwerp" id="onderwerp" />
-            </label>
-          </div>
-
-          <div>
-            <label for="reactie">
-              Reactie:
-              <textarea name="reactie" id="reactie" required></textarea>
-            </label>
-          </div>
-          <div>
-            <input type="submit" value="Versturen" />
-          </div>
-        </form>
-
-        <img
-          src="img/contact_2.jpg"
-          alt="Scrabble letters die'Contact us spellen'"
-          title="Contact"
-          width="400"
-        />
-        <img
+            <img
           src="img/email.jpg"
           alt="Hand met vele brieven boven"
           title="E-mail"
-          width="600"
+          class="img-fluid rounded"
         />
+          </div>
+          <div class="col-lg-5 px-3 my-5">
+            <form
+            action="https://tm-statweb.be/sendmail.php"
+            method="post"
+            title="Laat hier een reactie achter"
+            class="bg-light rounded pb-4"
+            >
+            <h3 class="ms-5 pt-4 pb-3">Contact formulier</h3>
+           
+            <input
+              type="email"
+              name="studentemail"
+              id="studentemail"
+              value="r0295639@student.thomasmore.be"
+              hidden
+            />
+            <div>
+              <label for="naam" class="form-label px-5">
+                Naam:
+                <input type="text" class="px-5 form-control" name="naam" id="naam" required />
+              </label>
+            </div>
+  
+            <div>
+              <label for="email" class="form-label px-5">
+                E-mailadres:
+                <input type="email" class="form-control px-5" name="email" id="email" required />
+              </label>
+            </div>
+  
+            <div>
+              <label for="telefoon" class="form-label px-5">
+                Telefoonnummer:
+                <input type="tel" class="form-control px-5" name="telefoon" id="telefoon" />
+              </label>
+            </div>
+  
+            <div>
+              <label for="onderwerp" class="form-label px-5">
+                Onderwerp:
+                <input type="text" class="form-control px-5" name="onderwerp" id="onderwerp" />
+              </label>
+            </div>
+  
+            <label for="reactie" class="form-label px-5">
+              Reactie:
+            </label>
+            <div class="ms-5 me-5 mb-4">
+                <textarea name="reactie" class="form-control" rows="5" required></textarea>
+              
+            </div>
+
+            <div class="me-5 px-5">
+              <input type="submit" class="form-control" value="Versturen"/>
+            </div>
+
+          </form>
+
+          </div>
+          <div class="col-lg-1 "></div>
+        </div>
+       
+
+        
       </div>
     </main>
     <div class="container bg-light">
