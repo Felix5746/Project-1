@@ -1,6 +1,7 @@
 
 .bg-light2{
     background-color: #e6e6e6;
+    
     color: #324c53;
 }
 .bg-lightblue{
@@ -9,13 +10,15 @@
    
 }
 
-color-green{
-    color: rgb(39, 68, 84);
-}
 
 .bg-light1{
     background-color: #cccccc;
-    ;
+    
+}
+
+.bg-banner{
+    background-color: #ecebeb;
+    
 }
 
 .title{
@@ -42,6 +45,6 @@ color-green{
     z-index: -1;
 }
 
-.foreground{
-    z-index:2000;
-}
+
+
+
